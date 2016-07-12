@@ -36,6 +36,7 @@ WheelDateDialogExample
                     }).createHomeDateDialog();
             dateDialog.show();
 <code>
-### Tip
 
+###Screenshot
+![screenshot](https://raw.githubusercontent.com/gybin02/WheelDateDialogExample/master/QQ%E6%88%AA%E5%9B%BE20160712180949.png)
 
