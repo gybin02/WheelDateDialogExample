@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roll_top">
+
+        <LinearLayout
+            android:id="@+id/linearLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_xs"
+            android:paddingLeft="@dimen/space_xs"
+            android:paddingRight="@dimen/space_xs"
+            android:paddingTop="@dimen/space_xs">
+
+            <TextView
+                android:id="@+id/reminder_no"
+                android:layout_width="86dip"
+                android:layout_height="39dip"
+                android:background="@drawable/btn_transparent_reb_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@drawable/btn_red_to_white_color_selector"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dialog Title"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+        <!--android:background="@drawable/no"-->
+        <LinearLayout
+            android:id="@+id/linearRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_xs"
+            android:paddingLeft="@dimen/space_xs"
+            android:paddingRight="@dimen/space_xs"
+            android:paddingTop="@dimen/space_xs">
+
+            <TextView
+                android:id="@+id/reminder_yes"
+                android:layout_width="86dp"
+                android:layout_height="38dp"
+                android:background="@drawable/btn_red_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white_a"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wheelview"
+        android:layout_width="fill_parent"
+        android:layout_height="208dip"
+        android:background="@drawable/apk_all_white"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="@dimen/space_xxs"
+            android:orientation="horizontal">
+
+
+            <com.seeker.datedialog.widget.wheel.WheelTextView
+                android:id="@+id/wtv_year"
+                android:layout_width="0dip"
+                android:layout_height="200dip"
+                android:layout_weight="3" />
+
+            <com.seeker.datedialog.widget.wheel.WheelTextView
+                android:id="@+id/wtv_month"
+                android:layout_width="0dip"
+                android:layout_height="200dip"
+                android:layout_weight="3" />
+
+            <com.seeker.datedialog.widget.wheel.WheelTextView
+                android:id="@+id/wtv_day"
+                android:layout_width="0dip"
+                android:layout_height="200dip"
+                android:layout_weight="4" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
