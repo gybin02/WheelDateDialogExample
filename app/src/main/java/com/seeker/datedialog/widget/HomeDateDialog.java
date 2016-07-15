@@ -249,7 +249,7 @@ public class HomeDateDialog extends AbsBottomDialog {
                 count = endCalendar.get(Calendar.MONTH) + 1;
                 start = 0;
             } else {
-                count = maximum;
+                count = maximum+1;
                 start = 0;
             }
 
