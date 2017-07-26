@@ -9,7 +9,7 @@ WheelDateDialogExample
  4. 使用自底向上弹出对话框
 
 ### How to use
-<code>
+```java
  Calendar calendarToday = Calendar.getInstance();
             Calendar calendarStart = (Calendar) calendarToday.clone();
             calendarStart.add(Calendar.DAY_OF_YEAR,-365);
@@ -35,7 +35,7 @@ WheelDateDialogExample
                         }
                     }).createHomeDateDialog();
             dateDialog.show();
-<code>
+```
 
 ###Screenshot
 ![screenshot](https://raw.githubusercontent.com/gybin02/WheelDateDialogExample/master/QQ%E6%88%AA%E5%9B%BE20160712180949.png)
